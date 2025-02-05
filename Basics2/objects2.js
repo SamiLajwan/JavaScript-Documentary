@@ -40,14 +40,29 @@ const users = [
 
 ]
 users[1].email
-console.log(tinderUser);
+// console.log(tinderUser);
 
-console.log(Object.keys(tinderUser)); // keys in arrays
-console.log(Object.values(tinderUser)); // values in array
-console.log(Object.entries(tinderUser)); // entries in array
+// console.log(Object.keys(tinderUser)); // keys in arrays
+// console.log(Object.values(tinderUser)); // values in array
+// console.log(Object.entries(tinderUser)); // entries in array
 
-console.log(tinderUser.hasOwnProperty('isloggedin')); // ans in boolean 
+// console.log(tinderUser.hasOwnProperty('isloggedin')); // ans in boolean 
 
+ const course = {
+    coursename: "js in hindi",
+    price: "999",
+    courseInstructor: "sami"
+ }
 
+//  course.courseInstructor   //-> can be used but we have better ways
 
+const {courseInstructor: instructor} = course
+// console.log(courseInstructor); // destructuring of object
+console.log(instructor);        // destructuring of object
+
+// {
+//     "name": "sami",
+//     "coursename": "js in hindi", //Api example.
+//     "price": "free"
+// }
 
