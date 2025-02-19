@@ -1,30 +1,45 @@
 .container {
-    width: 575px;
-    height: 825px;
-  
+    width: 100vw;
+    height: 100vh;
     background-color: grey;
     padding-left: 30px;
-  }
-  #height,
-  #weight {
+    box-sizing: border-box;
+    animation: fadeIn 2s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#height,
+#weight {
     width: 150px;
     height: 25px;
     margin-top: 30px;
-  }
-  
-  #weight-guide {
+}
+
+#weight-guide {
     margin-left: 75px;
     margin-top: 25px;
-  }
-  
-  #results {
+}
+
+#results {
     font-size: 35px;
     margin-left: 90px;
     margin-top: 20px;
     color: rgb(241, 241, 241);
-  }
-  
-  button {
+}
+
+button {
     width: 150px;
     height: 35px;
     margin-left: 90px;
@@ -35,13 +50,16 @@
     color: #212121;
     text-decoration: none;
     border: 2px solid #212121;
-  
     font-size: 25px;
-  }
-  
-  h1 {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #212121;
+    color: #fff;
+}
+
+h1 {
     padding-left: 15px;
     padding-top: 25px;
-    
-  }
-  
+}
